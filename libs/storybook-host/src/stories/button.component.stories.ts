@@ -13,7 +13,8 @@ export const PrimaryButton: Story = {
     args: {
         text: 'Action',
         variant: "primary",
-        disabled: false
+        disabled: false,
+        theme: 'blue'
     }
 };
 
@@ -50,5 +51,47 @@ export const TertiaryButtonDisabled: Story = {
   args: {
     ...TertiaryButton.args,
     disabled: true
+  }
+}
+
+export const PrimaryButtonViolet: Story = {
+    args: {
+        ...PrimaryButton.args,
+        theme: 'violet'
+    }
+};
+
+export const PrimaryButtonVioletDisabled: Story = {
+    args: {
+        ...PrimaryButtonDisabled.args,
+        theme: 'violet'
+    }
+};
+
+export const SecondaryButtonViolet: Story = {
+    args: {
+        ...SecondaryButton.args,
+        theme: 'violet'
+    }
+};
+
+export const SecondaryButtonDisabledViolet: Story = {
+  args: {
+    ...SecondaryButtonDisabled.args,
+    theme: "violet"
+  }
+}
+
+export const TertiaryButtonViolet: Story = {
+  args: {
+    ...TertiaryButton.args,
+    theme: "violet"
+  }
+}
+
+export const TertiaryButtonDisabledViolet: Story = {
+  args: {
+    ...TertiaryButtonDisabled.args,
+    theme: "violet"
   }
 }
