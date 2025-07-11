@@ -12,9 +12,8 @@ type Story = StoryObj<ButtonComponent>;
 export const PrimaryButton: Story = {
     args: {
         text: 'Action',
-        variant: "primary",
-        disabled: false,
-        theme: 'blue'
+        variant: 'primary',
+        disabled: false
     }
 };
 
@@ -22,6 +21,21 @@ export const PrimaryButtonDisabled: Story = {
     args: {
         ...PrimaryButton.args,
         disabled: true
+    }
+};
+
+export const PrimaryOutlineButton: Story = {
+    args: {
+       ...PrimaryButton.args,
+       variant: 'outline-primary',
+       disabled: false
+    }
+};
+
+export const PrimaryOutlineDisabledButton: Story = {
+    args: {
+       ...PrimaryOutlineButton.args,
+       disabled: true
     }
 };
 
@@ -40,58 +54,47 @@ export const SecondaryButtonDisabled: Story = {
     }
 };
 
-export const TertiaryButton: Story = {
-  args: {
+export const SuccessButton: Story = {
+  args: { 
     ...PrimaryButton.args,
-    variant: 'tertiary'
+    variant: 'success',
+    disabled: false
   }
 }
 
-export const TertiaryButtonDisabled: Story = {
-  args: {
-    ...TertiaryButton.args,
+export const SuccessButtonDisabled: Story = {
+  args: { 
+    ...SuccessButton.args,
     disabled: true
   }
 }
 
-export const PrimaryButtonViolet: Story = {
-    args: {
-        ...PrimaryButton.args,
-        theme: 'violet'
-    }
-};
-
-export const PrimaryButtonVioletDisabled: Story = {
-    args: {
-        ...PrimaryButtonDisabled.args,
-        theme: 'violet'
-    }
-};
-
-export const SecondaryButtonViolet: Story = {
-    args: {
-        ...SecondaryButton.args,
-        theme: 'violet'
-    }
-};
-
-export const SecondaryButtonDisabledViolet: Story = {
-  args: {
-    ...SecondaryButtonDisabled.args,
-    theme: "violet"
+export const WarningButton: Story = {
+  args: { 
+    ...PrimaryButton.args,
+    variant: 'warning',
+    disabled: false
   }
 }
 
-export const TertiaryButtonViolet: Story = {
-  args: {
-    ...TertiaryButton.args,
-    theme: "violet"
+export const WarningButtonDisabled: Story = {
+  args: { 
+    ...WarningButton.args,
+    disabled: true
   }
 }
 
-export const TertiaryButtonDisabledViolet: Story = {
-  args: {
-    ...TertiaryButtonDisabled.args,
-    theme: "violet"
+export const DangerButton: Story = {
+  args: { 
+    ...PrimaryButton.args,
+    variant: 'danger',
+    disabled: false
+  }
+}
+
+export const DangerButtonDisabled: Story = {
+  args: { 
+    ...DangerButton.args,
+    disabled: true
   }
 }

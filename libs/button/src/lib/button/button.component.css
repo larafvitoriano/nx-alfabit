@@ -1,29 +1,30 @@
 button {
-  --ab-primary-text-color: #181818;
-  --ab-secondary-text-color: #5C5C5C;
-  --ab-tertiary-text-color: #747474;
-  --ab-icons: #7C7B7B;
-  --ab-outline: #D7D7D7;
-  --ab-dividers: #EDEDED;
-  --ab-disabled-text: #8A8A8A;
-  --ab-disabled-bg: #EFEFEF;
-  --ab-boxes: #F8F8F8;
-  --ab-inputs: var(--ab-boxes);
-  --ab-white: #FFF;
+  --ab-primary-text-color: #fff;
+  --ab-secondary-text-color: #121212;
+  
+  --ab-primary-icons: #fff;
+  --ab-secondary-icons: #121212;
 
-  --ab-primary-color: #2D5BFF;
-  --ab-secondary-color: #6284FD;
-  --ab-tertiary-color: #96ADFF;
-  --ab-quaternary-color: #ECF0FF;
-  --ab-hover-color: #1B4AF0;
-  --ab-click-color: #002ED0;
+  --ab-white: #fff;
 
-  --ab-error-bg-color: #FFF2F2;
-  --ab-error-border-color: #FF3030;
-  --ab-success-bg-color: #E6FFE2;
+  --ab-primary-disabled-text: #fff;
+  --ab-primary-disabled-bg: #9ABEB5;
+
+  --ab-primary-color: #347d6b;
+  --ab-secondary-color: #dee2e6bf;
+  --ab-success-color: #28A745;
+  --ab-warning-color: #DEA400;
+  --ab-danger-color: #DC3545;
+
+  --ab-primary-hover-color: #21483F;
+  --ab-secondary-hover-color: #949799;
+  --ab-success-hover-color: #218838;
+  --ab-warning-hover-color: #C99600;
+  --ab-danger-hover-color: #BB2D3B;
 
   background: var(--ab-primary-color);
   color: var(--ab-white);
+
   padding: 0.75rem 2rem 0.75rem 2rem;
   border-radius: 0.5rem;
   border: none;
@@ -40,77 +41,136 @@ button:disabled {
   cursor: not-allowed;
 }
 
-button:focus {
-  outline-color: var(--ab-color-focus, #af4bfe);
+button:active {
+  cursor: pointer;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+button.primary {
+  border-color: var(--ab-primary-color);
+  background-color: var(--ab-primary-color);
+  color: var(--ab-primary-text-color);
+}
+
+button.primary:active {
+  background-color: var(--ab-primary-color);
+  border-color: var(--ab-primary-color);
+  color: var(--ab-primary-text-color);
 }
 
 button.primary:hover {
-  background: var(--ab-hover-color);
-  color: var(--ab-white);
+  background-color: var(--ab-primary-hover-color);
+  border-color: var(--ab-primary-hover-color);
 }
-
-
-button.primary:active {
-  background: var(--ab-click-color);
-  color: var(--ab-white);
-}
-
 
 button.primary:disabled {
-  background: var(--ab-disabled-bg);
-  color: var(--ab-disabled-text);
+  background-color: var(--ab-primary-disabled-bg);
+  color: var(--ab-primary-text-color);
+  cursor: not-allowed;
 }
 
+button.outline-primary {
+  background-color: transparent;
+  color: var(--ab-primary-color);
+  border: 1px solid #347D6B;
+}
+
+button.outline-primary:active {
+  background-color: transparent;
+  color: var(--ab-primary-color);
+  border: 1px solid #347D6B;
+}
+
+button.outline-primary:hover {
+  background-color: var(--ab-primary-color);
+  color: var(--ab-primary-text-color);
+}
+
+button.outline-primary:disabled {
+  cursor: not-allowed;
+  background-color: #E1ECE9;
+  color: #9ABEB5;            
+  border: 1px solid #84a59d;  
+  opacity: 1;
+}
 
 button.secondary {
-  background: var(--ab-quaternary-color);
-  color: var(--ab-primary-color);
+  background-color: var(--ab-secondary-color);
+  border-color: var(--ab-secondary-color);
+  color: var(--ab-secondary-text-color);
 }
-
-
-button.secondary:hover {
-  background: var(--ab-hover-color);
-  color: var(--ab-white);
-}
-
 
 button.secondary:active {
-  background: var(--ab-click-color);
-  color: var(--ab-white);
+  background-color: var(--ab-secondary-color);
+  border-color: var(--ab-secondary-color);
+  color: var(--ab-secondary-text-color);
 }
 
+button.secondary:hover {
+  background-color: var(--ab-secondary-hover-color);
+}
 
 button.secondary:disabled {
-  background: var(--ab-disabled-bg);
-  color: var(--ab-disabled-text);
+  cursor: not-allowed;
+  background-color: #EEF0F2;
 }
 
-button.tertiary {
-  background: var(--ab-white);
-  color: var(--ab-primary-color);
+button.success {
+  background-color: var(--ab-success-color);
+  color: var(--ab-secondary-text-color);
 }
 
-button.tertiary:hover {
-  background: var(--ab-white);
-  color: var(--ab-hover-color);
+button.success:active {
+  background-color: var(--ab-success-color);
+  color: var(--ab-secondary-text-color);
 }
 
-button.tertiary:active {
-  background: var(--ab-white);
-  color: var(--ab-click-color);
+button.success:hover{
+  background-color: var(--ab-success-hover-color);
 }
 
-button.tertiary:disabled {
-  background: var(--ab-white);
-  color: var(--ab-disabled-text);
+button.success:disabled{
+  cursor: not-allowed;
+  background-color: #93D3A2;
 }
 
-.violet {
-    --ab-primary-color: #af4bfe;
-    --ab-secondary-color: #be74f9;
-    --ab-tertiary-color: #e2bdff;
-    --ab-quaternary-color: #f5e8ff;
-    --ab-hover-color: #a530ff;
-    --ab-click-color: #8e25df;
-    --ab-focus-color: #2d5bff;
+button.warning {
+  background-color: var(--ab-warning-color);
+  color: var(--ab-secondary-text-color);
+}
+
+button.warning:active {
+  background-color: var(--ab-warning-color);
+  color: var(--ab-secondary-text-color);
+}
+
+button.warning:hover{
+  background-color: var(--ab-warning-hover-color);
+}
+
+button.warning:disabled{
+  cursor: not-allowed;
+  background-color: #EED180;
+}
+
+button.danger {
+  background-color: var(--ab-danger-color);
+  color: var(--ab-primary-text-color);
+}
+
+button.danger:active {
+  background-color: var(--ab-danger-color);
+  color: var(--ab-primary-text-color);
+}
+
+button.danger:hover{
+  background-color: var(--ab-danger-hover-color);
+}
+
+button.danger:disabled{
+  cursor: not-allowed;
+  background-color: #ED9AA2;
 }
