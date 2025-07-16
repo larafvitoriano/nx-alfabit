@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@lara/button": ["libs/button/src/index.ts"],
-      "@lara/ds-storybook": ["libs/storybook-host/src/index.ts"]
+      "@lara/ds-storybook": ["libs/storybook-host/src/index.ts"],
+      "@lara/login-page": ["libs/login-page/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
