@@ -17,6 +17,7 @@
     "paths": {
       "@lara/button": ["libs/button/src/index.ts"],
       "@lara/ds-storybook": ["libs/storybook-host/src/index.ts"],
+      "@lara/input-field": ["libs/input-field/src/index.ts"],
       "@lara/login-page": ["libs/login-page/src/index.ts"]
     }
   },
