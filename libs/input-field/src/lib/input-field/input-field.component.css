@@ -1,0 +1,35 @@
+:host {
+  display: block;
+}
+
+input.form-control:read-only {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #1e7662!important;
+    box-shadow: 0 0 0 .2rem rgba(30, 118, 98, .1568627450980392);
+}
+
+.form-label {
+  color: #347d6b;
+  font-weight: 700;
+  font-size: .75rem;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}

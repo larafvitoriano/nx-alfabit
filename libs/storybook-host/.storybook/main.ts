@@ -7,6 +7,14 @@ const config: StorybookConfig = {
     name: '@storybook/angular',
     options: {},
   },
+  webpackFinal: async (config) => {
+    config.module?.rules?.push({
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader'],
+      include: /node_modules/,
+    });
+    return config;
+  },
   docs: {
     autodocs: true
   }

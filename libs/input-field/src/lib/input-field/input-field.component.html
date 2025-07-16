@@ -1,1 +1,11 @@
-<p>input-field works!</p>
+<div class="form-group">
+  <label *ngIf="showLabel" class="form-label">{{ label }}</label>
+
+  <input
+    class="form-control"
+    [type]="type"
+    [placeholder]="placeholder"
+    [readonly]="isReadOnly"
+  />
+</div>
+

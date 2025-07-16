@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,4 +8,15 @@ import { CommonModule } from '@angular/common';
   templateUrl: './input-field.component.html',
   styleUrl: './input-field.component.css',
 })
-export class InputFieldComponent {}
+export class InputFieldComponent {
+  @Input() label: string = 'Campo';
+
+  @Input() placeholder: string = '';
+
+  @Input() type: string = 'text';
+
+  @Input() isReadOnly: boolean = false;
+
+  @Input() showLabel: boolean = true;
+
+}
