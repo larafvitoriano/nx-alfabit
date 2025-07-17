@@ -1,5 +1,8 @@
 nav {
   background-color: #21483f;
   border-bottom: 4px solid #dea400;
-  z-index: 999999;
+}
+
+.navbar-brand {
+  padding: .6rem 2rem;
 }
