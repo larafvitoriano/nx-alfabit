@@ -1,0 +1,29 @@
+.user-info {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* espaço entre avatar e info */
+}
+
+.user-info .avatar {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.user-info h4,
+.user-info h5 {
+  font-size: 0.8rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.user-info h5 {
+  font-weight: 300;
+}
+
+.user-info .user-action {
+  font-size: 0.75rem;
+  font-weight: 400;
+  opacity: 0.9;
+}

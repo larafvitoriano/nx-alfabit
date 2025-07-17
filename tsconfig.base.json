@@ -20,7 +20,8 @@
       "@lara/header": ["libs/header/src/index.ts"],
       "@lara/input-field": ["libs/input-field/src/index.ts"],
       "@lara/login-page": ["libs/login-page/src/index.ts"],
-      "@lara/modal": ["libs/modal/src/index.ts"]
+      "@lara/modal": ["libs/modal/src/index.ts"],
+      "@lara/user-info": ["libs/user-info/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
