@@ -8,6 +8,7 @@ import { ModalComponent } from '@lara/modal';
 import { HeaderComponent } from '@lara/header';
 import { UserInfoComponent } from '@lara/user-info';
 import { SidebarComponent } from '@lara/sidebar';
+import { BreadcrumbComponent } from '@lara/breadcrumb';
 
 @Component({
   standalone: true,
@@ -20,7 +21,8 @@ import { SidebarComponent } from '@lara/sidebar';
     ModalComponent,
     HeaderComponent,
     UserInfoComponent,
-    SidebarComponent
+    SidebarComponent,
+    BreadcrumbComponent
   ],
   selector: 'app-root',
   templateUrl: './app.component.html',
