@@ -21,6 +21,7 @@
       "@lara/input-field": ["libs/input-field/src/index.ts"],
       "@lara/login-page": ["libs/login-page/src/index.ts"],
       "@lara/modal": ["libs/modal/src/index.ts"],
+      "@lara/sidebar": ["libs/sidebar/src/index.ts"],
       "@lara/user-info": ["libs/user-info/src/index.ts"]
     }
   },

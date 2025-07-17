@@ -7,10 +7,21 @@ import { InputFieldComponent } from '@lara/input-field';
 import { ModalComponent } from '@lara/modal';
 import { HeaderComponent } from '@lara/header';
 import { UserInfoComponent } from '@lara/user-info';
+import { SidebarComponent } from '@lara/sidebar';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule, ButtonComponent, LoginPageComponent, InputFieldComponent, ModalComponent, HeaderComponent, UserInfoComponent],
+  imports: [
+    NxWelcomeComponent,
+    RouterModule,
+    ButtonComponent,
+    LoginPageComponent,
+    InputFieldComponent,
+    ModalComponent,
+    HeaderComponent,
+    UserInfoComponent,
+    SidebarComponent
+  ],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
