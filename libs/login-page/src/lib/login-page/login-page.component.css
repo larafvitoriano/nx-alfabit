@@ -1,0 +1,78 @@
+body {
+  padding-top: 0;
+}
+
+.container {
+  color: #60a29c;
+}
+
+.h5 {
+  font-size: 1.25rem;
+}
+
+tce-input-field ::ng-deep input {
+ height: 42px;
+  font-size: 1rem;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center; /* ou center, se desejar */
+}
+
+.container main {
+  max-width: 300px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container main a {
+  color: #817e7e;
+  font-size: 0.875rem;
+  transition: opacity 0.2s;
+   display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.container main a:hover {
+  opacity: 70%;
+}
+
+.container .content {
+  min-height: 100vh;
+}
+
+.p {
+  color: #817e7e;
+}
+
+header svg {
+  width: 250px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+header h5 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+}
+
+header h5 strong {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+header span {
+  font-size: 0.875rem;
+  color: #60a29c;
+}
+
+/* BOTÃO */
+form ab-button {
+  width: 100%;
+  height: 42px;
+  padding: 8px 12px;
+  font-size: 16px;
+  box-sizing: border-box;
+  display: block;
+}
