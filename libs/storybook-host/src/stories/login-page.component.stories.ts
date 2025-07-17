@@ -13,6 +13,11 @@ const meta: Meta<LoginPageComponent> = {
       imports: [LoginPageComponent, InputFieldComponent, ButtonComponent],
     }),
   ],
+  parameters: {
+    docs: {
+      autodocs: false, 
+    },
+},
 };
 
 export default meta;

@@ -5,10 +5,11 @@ import { ButtonComponent } from '@lara/button';
 import { LoginPageComponent } from '@lara/login-page';
 import { InputFieldComponent } from '@lara/input-field';
 import { ModalComponent } from '@lara/modal';
+import { HeaderComponent } from '@lara/header';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule, ButtonComponent, LoginPageComponent, InputFieldComponent, ModalComponent],
+  imports: [NxWelcomeComponent, RouterModule, ButtonComponent, LoginPageComponent, InputFieldComponent, ModalComponent, HeaderComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
