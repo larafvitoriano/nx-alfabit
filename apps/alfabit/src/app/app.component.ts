@@ -9,6 +9,7 @@ import { HeaderComponent } from '@lara/header';
 import { UserInfoComponent } from '@lara/user-info';
 import { SidebarComponent } from '@lara/sidebar';
 import { BreadcrumbComponent } from '@lara/breadcrumb';
+import { HomepageComponent } from '@lara/homepage';
 
 @Component({
   standalone: true,
@@ -22,7 +23,8 @@ import { BreadcrumbComponent } from '@lara/breadcrumb';
     HeaderComponent,
     UserInfoComponent,
     SidebarComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    HomepageComponent
   ],
   selector: 'app-root',
   templateUrl: './app.component.html',
