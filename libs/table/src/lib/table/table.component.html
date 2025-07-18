@@ -1,0 +1,98 @@
+<div class="container-fluid">
+  <div class="row mb-3 align-items-center flex-wrap gap-2 filtros-barra">
+    <!-- Resultados por página -->
+    <div class="col-auto d-flex align-items-center gap-2">
+      <select id="pageSizeSelect" class="form-select form-select-sm w-auto">
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+      </select>
+      <span class="text-nowrap">resultados por página</span>
+    </div>
+
+    <!-- Pesquisa rápida -->
+    <div class="col col-md-auto">
+      <label for="searchInput" class="visually-hidden">Pesquisa rápida</label>
+      <tce-input-field
+        id="searchInput"
+        type="text"
+        placeholder="Pesquisa rápida"
+        [showLabel]="false"
+      ></tce-input-field>
+    </div>
+
+    <!-- Legendas -->
+    <div
+      class="col-12 col-sm-6 d-flex justify-content-start justify-content-sm-end align-items-center text-secondary mt-2 mt-sm-0 gap-3 flex-wrap"
+      role="region"
+      aria-label="Legenda de status"
+    >
+      <span class="d-flex align-items-center me-3" role="presentation">
+        <i class="fa-solid fa-check me-2 text-success" aria-hidden="true"></i>
+        <span>Ativo</span>
+      </span>
+      <span class="d-flex align-items-center me-3" role="presentation">
+        <i class="fa-solid fa-triangle-exclamation me-2 text-warning" aria-hidden="true"></i>
+        <span>Inativo</span>
+      </span>
+      <span class="d-flex align-items-center me-3" role="presentation">
+        <i class="fa-solid fa-exclamation me-2 text-danger" aria-hidden="true"></i>
+        <span>Pendente</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Tabela de dados -->
+  <table class="table table-striped table-bordered table-hover align-middle" role="table" aria-describedby="tabelaDescricao">
+    <caption id="tabelaDescricao" class="visually-hidden">Tabela de usuários com ações de status</caption>
+    <thead class="table-light text-center">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Primeiro nome</th>
+        <th scope="col">Último nome</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td><i class="fa-solid fa-check text-success" aria-label="Status ativo"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td><i class="fa-solid fa-triangle-exclamation text-warning" aria-label="Status inativo"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td><i class="fa-solid fa-exclamation text-danger" aria-label="Status pendente"></i></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Paginação -->
+  <nav aria-label="Navegação de páginas da tabela">
+    <ul class="pagination justify-content-end">
+      <li class="page-item disabled" aria-disabled="true">
+        <a class="page-link" tabindex="-1" aria-label="Página anterior">Anterior</a>
+      </li>
+      <li class="page-item active" aria-current="page">
+        <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Próxima página">Próxima</a>
+      </li>
+    </ul>
+  </nav>
+</div>
