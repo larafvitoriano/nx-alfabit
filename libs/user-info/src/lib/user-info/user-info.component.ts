@@ -10,6 +10,6 @@ import { CommonModule } from '@angular/common';
 })
 export class UserInfoComponent {
   @Input() nome: string = 'Nome do Usuário';
-  @Input() tipo: string = 'Tipo de Operador';
+  @Input() setor: string = 'Setor do Operador';
   @Input() avatarUrl: string = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18iwsdCCbBfpa50-5BmNa_m_BX087_x1oWQ&s';
 }
