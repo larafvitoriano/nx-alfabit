@@ -1,31 +1,6 @@
-<div class="content">
-  <tce-breadcrumb></tce-breadcrumb>
-<section class="homepage-welcome d-flex flex-column">
-    <div class="content-wrapper text-center container py-5 mx-auto">
-  <header>
-    <h1 class="display-4 fw-bold mb-3 title-primary">
-      Bem-vindo ao <span class="text-secondary">Robocop </span>
-    </h1>
-    <p class="lead mb-4 text-muted">
-      Explore as funcionalidades e recursos disponíveis.
-    </p>
-  </header>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-  <div class="mb-4">
-    <a
-      href="#"
-      target="_blank"
-      rel="noopener noreferrer"
-     class="btn btn-outline-warning btn-lg btn-doc"
-      aria-label="Acessar documentação do Robocop na wiki"
-      title="Documentação do Robocop na Wiki"
-    >
-      📚 Acessar documentação
-    </a>
-  </div>
-
-  <div class="homepage-illustration mb-5">
-    
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="50px" viewBox="0 0 24 24" xml:space="preserve" fill="#52c1b6">
 
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
@@ -35,14 +10,3 @@
 <g id="SVGRepo_iconCarrier"> <g id="Guides"> <g id="_x32_0_px_2_"> </g> <g id="_x32_0px"> </g> <g id="_x34_0px"> </g> <g id="_x34_4_px"> </g> <g id="_x34_8px"> <g id="_x31_6px"> </g> <g id="square_4px"> <g id="_x32_8_px"> <g id="square_4px_2_"> </g> <g id="square_4px_3_"> </g> <g id="square_4px_1_"> </g> <g id="_x32_4_px_2_"> </g> <g id="_x31_2_px"> </g> </g> </g> </g> <g id="Icons"> </g> <g id="_x32_0_px"> </g> <g id="square_6px"> <g id="_x31_2_PX"> </g> </g> <g id="_x33_6_px"> <g id="_x33_2_px"> <g id="_x32_8_px_1_"> <g id="square_6px_1_"> </g> <g id="_x32_0_px_1_"> <g id="_x31_2_PX_2_"> </g> <g id="_x34_8_px"> <g id="_x32_4_px"> </g> <g id="_x32_4_px_1_"> </g> </g> </g> </g> </g> </g> <g id="_x32_0_px_3_"> </g> <g id="_x32_0_px_4_"> </g> <g id="New_Symbol_8"> <g id="_x32_4_px_3_"> </g> </g> </g> <g id="Artboard"> </g> <g id="Free_Icons"> <g> <polygon style="fill:none;stroke:#52c1b6;stroke-linejoin:round;stroke-miterlimit:10;" points="10.5,6.5 9,7.5 7.5,6.5 7.5,5 9,4 10.5,5 "/> <line style="fill:none;stroke:#52c1b6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="12" y1="0.5" x2="12" y2="1.5"/> <polygon style="fill:none;stroke:#52c1b6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="16,23.5 8,23.5 6.5,16 9,13.5 15,13.5 17.5,16 "/> <line style="fill:none;stroke:#52c1b6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="12" y1="10.5" x2="12" y2="13.5"/> <line style="fill:none;stroke:#52c1b6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="7.6" y1="21.5" x2="16.4" y2="21.5"/> <polyline style="fill:none;stroke:#52c1b6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="2.5,16 3,19 6.844,17.719 "/> <polyline style="fill:none;stroke:#52c1b6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="0.5,12 0.5,14 2.5,16 4.5,14 4.5,12 "/> <polygon style="fill:none;stroke:#52c1b6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="16,10.5 20.5,6 16,1.5 8,1.5 3.5,6 8,10.5 "/> <polygon style="fill:none;stroke:#52c1b6;stroke-linejoin:round;stroke-miterlimit:10;" points="13.5,6.5 15,7.5 16.5,6.5 16.5,5 15,4 13.5,5 "/> <polyline style="fill:none;stroke:#52c1b6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="21.5,16 21,19 17.156,17.719 "/> <polyline style="fill:none;stroke:#52c1b6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="23.5,12 23.5,14 21.5,16 19.5,14 19.5,12 "/> </g> </g> </g>
 
 </svg>
-
-  </div>
-  </div>
-
-  <footer class="text-muted small footer-custom text-center">
-    <p>
-      © 2025 - Tribunal de Contas do Estado do RN. Todos os direitos reservados.
-    </p>
-  </footer>
-</section>
-</div>

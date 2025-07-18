@@ -1,0 +1,75 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.homepage-welcome {
+  min-height: 100vh;       /* ocupa toda a altura da viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente */
+  align-items: center;     /* centraliza horizontalmente */
+
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  max-width: 720px; /* largura máxima para o conteúdo */
+  width: 100%;
+}
+
+.homepage-welcome a.btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.homepage-welcome a.btn:hover {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Cores principais */
+.title-primary {
+  color: #21483f;
+}
+
+.text-secondary {
+  color: #347d6b !important;
+}
+
+/* Botão amarelo estilizado com borda e hover */
+.btn-doc {
+  color: #dea400;
+  border-color: #dea400;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-doc:hover,
+.btn-doc:focus {
+  background-color: #dea400;
+  color: #21483f;
+  text-decoration: none;
+  box-shadow: 0 0 8px rgba(218, 170, 0, 0.6);
+}
+
+/* Ajuste da ilustração */
+.homepage-illustration svg {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer-custom {
+  color: #21483f;
+  opacity: 0.6;
+  margin-top: auto; /* empurra o footer para o fim da seção */
+  padding-top: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content {
+  margin-left: 250px; /* sidebar */
+  margin-top: 100px; /* header + breadcrumb */
+  padding: 1rem;
+}
