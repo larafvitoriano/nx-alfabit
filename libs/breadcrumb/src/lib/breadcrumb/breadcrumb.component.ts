@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,4 +8,10 @@ import { CommonModule } from '@angular/common';
   templateUrl: './breadcrumb.component.html',
   styleUrl: './breadcrumb.component.css',
 })
-export class BreadcrumbComponent {}
+export class BreadcrumbComponent {
+  @Input() sidebarAberta = true;
+
+  get leftPosition() {
+  return this.sidebarAberta ? '14.5rem' : '3rem';
+}
+}

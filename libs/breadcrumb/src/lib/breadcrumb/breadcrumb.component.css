@@ -1,11 +1,25 @@
-li {
-  cursor: pointer;
+.breadcrumb-container {
+  position: fixed;
+  top: 5.875rem; /* mesma altura do seu header */
+  left: 14.5rem; /* mesma largura do sidebar aberto */
+  right: 0;
+  height: 2.5rem;
+  background-color: #e9ecef;
+  border-bottom: 1px solid #dee2e6;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  margin-top: 0.55rem;
+  
 }
 
-li:hover {
-  opacity: 0.8;
+.sidebar.collapsed ~ .breadcrumb-container {
+  left: 3rem; /* largura reduzida da sidebar colapsada */
 }
 
-.active {
-  font-weight: bold;
+.breadcrumb {
+  background-color: transparent;
+  font-size: 0.85rem;
+  margin-bottom: 0;
+   gap: 0.5rem;
 }
