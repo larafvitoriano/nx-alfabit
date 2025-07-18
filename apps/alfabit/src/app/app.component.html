@@ -1,7 +1,14 @@
-<tce-header></tce-header>
+<!-- Header fixo no topo -->
+<tce-header class="header"></tce-header>
 
-<tce-sidebar></tce-sidebar>
+<!-- Corpo principal da página com sidebar e conteúdo -->
+<div class="main-container">
+  <!-- Sidebar à esquerda -->
+  <tce-sidebar class="sidebar"></tce-sidebar>
 
-<tce-breadcrumb></tce-breadcrumb>
-
-<ab-login-page></ab-login-page>
+  <!-- Conteúdo da página -->
+  <div class="content">
+    <tce-breadcrumb></tce-breadcrumb>
+    <router-outlet></router-outlet>
+  </div>
+</div>
