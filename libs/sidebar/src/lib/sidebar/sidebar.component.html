@@ -1,24 +1,31 @@
-<nav class="sidebar navbar navbar-light flex-column left-align" [class.show]="sidebarAberta">
-  <ul class="nav navbar-nav mt-3 align-items-start w-100">
-     <li class="nav-item w-100">
-      <div class="menu-header" >
+<nav class="sidebar navbar navbar-light flex-column left-align" 
+[class.show]="sidebarAberta"
+[class.collapsed]="!sidebarAberta"
+role="navigation"
+aria-label="Menu lateral principal">
+
+  <ul 
+  class="nav navbar-nav mt-3 align-items-start w-100" 
+  *ngIf="sidebarAberta">
+
+    <li class="nav-item w-100">
+
+      <div class="menu-header" (click)="grupos.processos = !grupos.processos">
         <span [class.open]="grupos.processos"><i class="fas fa-angle-down"></i>
-</span>
-        <strong>Processos</strong>
+        </span>
+        <strong class="title">Processos</strong>
       </div>
       <ul class="submenu list-unstyled pl-3" *ngIf="grupos.processos">
         <li><a class="nav-link text-decoration-none"><i class="fas fa-angle-right"></i> Processos no Setor</a></li>
         <li><a class="nav-link text-decoration-none"><i class="fas fa-angle-right"></i> Meus Processos</a></li>
         <li><a class="nav-link text-decoration-none"><i class="fas fa-angle-right"></i> Consulta Processual</a></li>
-          </ul>
+      </ul>
     </li>
-    
   </ul>
-  <button
-    type="button"
-    class="btn btn-primary mx-auto mt-auto rounded-circle btn-show"
-    (click)="toggleSidebar()"
-  >
-    <i class="fas fa-arrow-left"></i>
+
+  <button type="button" class="btn btn-primary mx-auto mt-auto rounded-circle btn-show" (click)="toggleSidebar()"
+    [attr.aria-label]="sidebarAberta ? 'Recolher menu lateral' : 'Expandir menu lateral'"
+    [attr.title]="sidebarAberta ? 'Recolher menu' : 'Expandir menu'" arial-controls="sidebar" [attr.aria-expanded]="sidebarAberta">
+    <i [class]="sidebarAberta ? 'fas fa-arrow-left' : 'fas fa-arrow-right'" aria-hidden="true"></i>
   </button>
 </nav>
